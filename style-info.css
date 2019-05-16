@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Manulife JH Sans;
+  scroll-behavior: smooth;
+}
+.logo {
+    display: inline-block;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+.manulife {
+  padding-top: 0px;
+  padding-left: 5px;
+  padding-bottom: 8px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.navbar {
+  font-size: 14px;
+  background-color: rgba(250, 250, 250, 0.8);
+  border: 1px solid rgba(142, 144, 162, 0.3);
+  padding-bottom: 2px;
+}
+.main-nav, .nav-dropdown {
+  list-style-type: none;
+}
+.nav-links, .logo, .drop-links {
+  color: rgb(94, 96, 115);
+}
+.nav-dropdown {
+  display: none;
+  opacity: 0;
+}
+.main-nav li {
+  text-align: center;
+  background-color: rgba(250, 250, 250, 0.8);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0.5px solid rgba(142, 144, 162, 0.3);
+}
+.main-nav li:hover {
+  background-color: rgba(237, 237, 237, 0.8);
+}
+.main-nav a:hover {
+  color: #0000C1;
+}
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.navbar-toggle:hover {
+  opacity: 1.0;
+  transition: opacity 1s ease-in-out;
+}
+.main-nav {
+  list-style-type: none;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.active {
+  display: block;
+  width: 30%;
+  float: right;
+  padding-top: 43px;
+  min-width: 250px;
+  opacity: 1.0;
+  transition: opacity 0.5s ease-in-out;
+}
+.hover-active {
+  padding-bottom: 0px !important;
+}
+.drop-links {
+  font-size: 12px;
+  background-color: rgba(237, 237, 237, 0.3) !important;
+  border: 0.1px solid rgba(142, 144, 162, 0.05);
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+}
+.activedrop {
+  display: block;
+  opacity: 1.0;
+  padding-top: 10px;
+  border: 0px;
+  border: none;
+}
+.activedrop li:hover {
+  background-color: rgba(142, 144, 162, 0.05) !important;
+}
+.all-nav {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+.titlehead {
+  z-index: -1;
+  position: relative;
+  top: 45px;
+  background-color: #5CD790;
+  height: 150px;
+  box-shadow: 0px 1px 6px grey;
+}
+.titlehead h1 {
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 36px;
+  align-self: center;
+  position: relative;
+  top: 60px;
+}
+.request {
+  position: relative;
+  top: 50px;
+  color: #34384B;
+}
+.request-head, .specs {
+  text-align: center;
+}
+.request-head h1 {
+  font-weight: lighter;
+  color: #424559;
+  font-size: 28px;
+  padding: 20px 0px;
+}
+.request-head img {
+  width: 30%;
+  padding-top: 100px;
+}
+#button1-container {
+  width: 100%;
+  height: 100px;
+  padding-top: 25px;
+}
+.product-name {
+  text-align: center;
+}
+.product-name h3 {
+  font-weight: 500;
+  font-size: 24px;
+  color: #282B3E;
+}
+h4 {
+  font-size: 20px;
+  color: #34384B;
+  font-weight: normal;
+  margin-left: 8.5%;
+  padding-bottom: 10px;
+}
+hr {
+  width: 83%;
+  margin-left: 8.5%;
+}
+.specs {
+  position: relative;
+  top: 35px;
+}
+.specs p {
+  padding-top: 5px;
+  margin: 0px 23.5%;
+  line-height: 1.5;
+  font-weight: lighter;
+}
+.price, .finish, .memory, .ports, .battery {
+  height: 175px;
+}
+.accessibility {
+  height: 250px;
+}
+.display {
+  height: 400px;
+}
+.display h5 {
+  font-size: 16px;
+  font-weight: normal;
+  color: #000000;
+  padding-top: 15px;
+}
+.graphics, .features, .processor {
+  height: 200px;
+}
+.specs a {
+  text-decoration: none;
+  color: #0000C1;
+}
+.specs a:hover {
+  color: #2D69FF;
+}
+#button2-container {
+  position: relative;
+  height: 100px;
+}
+.button {
+  text-align: center;
+  font-size: 14px;
+  width: 25%;
+  margin: 0px 37.5%;
+}
+.button a {
+  text-decoration: none;
+  color: #34384B;
+}
+.button p {
+  background-color: #C1D8F7;
+  padding: 10px 0px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 6px grey;
+}
+.button p:hover {
+  background-color: #EDEDED;
+}
+#request {
+  height: 0px;
+  position: relative;
+  top: 5px;
+}
+.faq-head {
+  text-align: center;
+  margin-top: 50px;
+}
+.faq-head h1 {
+  font-weight: lighter;
+  color: #FFFFFF;
+  background-color: #2D69FF;
+  padding: 20px 0px;
+}
+.accordion {
+  background-color: rgba(250, 250, 250, 0.2);
+  color: #34384B;
+  cursor: pointer;
+  padding: 20px 100px 15px 50px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  transition: 0.4s;
+  line-height: 1.3;
+  font-weight: 300;
+  background-image: url(../images/arrow.png);
+  background-repeat: no-repeat;
+  background-size: 8px auto;
+  background-position: right 15px top 50%;
+}
+.active-faq, .accordion:hover {
+  background-color: rgba(237, 237, 237, 0.6);
+}
+.active-faq {
+  background-image: url(../images/arrow_after.png);
+  background-repeat: no-repeat;
+  background-size: auto 8px;
+  background-position: right 15px top 50%;
+}
+.panel {
+  border: 1px solid rgba(112, 112, 112, 0.1);
+  padding: 0px 20% 0px 70px;
+  top: 30px;
+  background-color: rgba(250, 250, 250, 0.2);
+  overflow: hidden;
+  font-size: 14px;
+  color: #34384B;
+  line-height: 1.5;
+  font-weight: 300;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+.panel p {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.end {
+  height: 3px;
+  background-color: rgba(142, 144, 162, 0.5);
+}
+.section {
+  opacity: 0;
+  transition: opacity 1s;
+}
+.visible {
+  opacity: 1;
+}
+@media only screen and (max-width: 772px) {
+  .titlehead h1 {
+    top: 60px;
+    font-size: 28px;
+    line-height: 1.3;
+    padding: 0px 2%;
+  }
+  .faq h2 {
+    font-size: 18px;
+  }
+  .faq p {
+    font-size: 12px;
+  }
+  .request-head h1 {
+    font-size: 22px;
+    padding: 15px 0px;
+  }
+  .product-name h3 {
+    font-size: 16px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  .specs p, .display h5 {
+    font-size: 12px;
+  }
+  .button {
+    width: 44%;
+    margin: 0px 28%;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .active {
+    width: 100%;
+    padding-top: 0px;
+  }
+  .button {
+    width: 50%;
+    margin: 0px 25%;
+  }
+  .manulife {
+    display: none;
+  }
+}
